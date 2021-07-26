@@ -1,0 +1,64 @@
+{"charges": [
+        {
+            "date": "Jul",
+            "priorFY": 20,
+            "curFY":  19,
+            "avg": 15
+        },{
+            "date": "Aug",
+            "priorFY": 14,
+            "curFY":  14,
+            "avg": 15
+        },{
+            "date": "Sep",
+            "priorFY": 25,
+            "curFY":  22,
+            "avg": 15
+        },{
+            "date": "Oct",
+            "priorFY": 16,
+            "curFY":  14,
+            "avg": 15
+        },{
+            "date": "Nov",
+            "priorFY": 18,
+            "curFY":  16,
+            "avg": 15
+        },{
+            "date": "Dec",
+            "priorFY": 22,
+            "curFY":  19,
+            "avg": 15
+        },{
+            "date": "Jan",
+            "priorFY": 19,
+            "curFY":  15,
+            "avg": 15
+        },{
+            "date": "Feb",
+            "priorFY": 15,
+            "curFY":  14,
+            "avg": 15
+        },{
+            "date": "Mar",
+            "priorFY": 12,
+            "curFY":  10,
+            "avg": 15
+        },{
+            "date": "Apr",
+            "priorFY": 16,
+            "curFY":  12,
+            "avg": 15
+        },{
+            "date": "May",
+            "priorFY": 14,
+            "curFY":  12,
+            "avg": 15
+        },{
+            "date": "Jun",
+            "priorFY": 17,
+            "curFY":  16,
+            "avg": 15
+        }
+    ]
+}

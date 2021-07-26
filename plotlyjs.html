@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Plotly CDN -->
+    <script src="https://cdn.plot.ly/plotly-2.2.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>PLOTLYJS</title>
+    <style>
+        .wrapper{border:1px solid black};
+    </style>
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "plotlyjs.json",
+            success: function(data){
+                months = data.charges.map(function(elem) {
+                    return elem.date;
+                });
+                priorFY = data.charges.map(function(elem) {
+                    return elem.priorFY;
+                });
+                curFY = data.charges.map(function(elem) {
+                    return elem.curFY;
+                });
+                varAvg = data.charges.map(function(elem) {
+                    return elem.avg;
+                });
+                barChart('charges');
+                lineAvgChart();
+                lineEMChart('est');
+            },
+            error: function(error_data){
+                console.log("error")
+                console.log(error_data)
+            },
+        })
+    </script>   
+</head>
+<body>
+    <div class="wrapper">
+        <h1>This is a sample of Plotly.js</h1>
+        <h2>All charting options will be displayed below</h2>
+        <div id="barChart"></div>        
+    </div>
+    <div class="wrapper">
+        <div id="lineAvgChart"></div>
+    </div> 
+    <div class="wrapper">
+        <div id="EMChart"></div>
+    </div>
+    <script src="plotlyjs.js"></script>  
+</body>
+</html>    
